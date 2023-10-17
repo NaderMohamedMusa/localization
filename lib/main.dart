@@ -22,6 +22,7 @@ class MyApp extends StatelessWidget {
         GlobalMaterialLocalizations.delegate,
         GlobalWidgetsLocalizations.delegate,
       ],
+
       localeResolutionCallback: (deviceLocale,supportedLocales){
         for(var locale in supportedLocales){
           if(deviceLocale !=null && deviceLocale.languageCode == locale.languageCode){
